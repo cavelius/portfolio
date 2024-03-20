@@ -32,7 +32,7 @@ p {
   margin: 0;
   text-transform: uppercase;
   margin: 40px 100px 40px 100px;
-  animation: schriftGroesse 3s 3s forwards;
+  animation: schriftGroesse 1s 2s forwards;
 }
 
 @keyframes schriftGroesse {
@@ -55,7 +55,7 @@ p {
   background-color: rgba(0, 0, 0, 1); /* Startfarbe: Schwarz */
   z-index: 10; /* Stelle sicher, dass das Overlay über allen anderen Elementen liegt */
   display: none; /* Das Overlay standardmäßig ausblenden */
-  animation: fadeOut 3s 4s forwards; /* Verzögere die Animation um 5 Sekunden und animiere dann den Übergang von Schwarz zu Transparent über 2 Sekunden */
+  animation: fadeOut 1s 2s forwards; /* Verzögere die Animation um 5 Sekunden und animiere dann den Übergang von Schwarz zu Transparent über 2 Sekunden */
 }
 
 @keyframes fadeOut {

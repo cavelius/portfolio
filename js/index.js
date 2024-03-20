@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     overlay.classList.add("fadeOut");
     overlayFont.classList.add("schriftGroesse");
-  }, 3000); // Die Klasse wird nach 3 Sekunden hinzugefügt
+  }, 1000); // Die Klasse wird nach 3 Sekunden hinzugefügt
 
   // Verstecke das Overlay nach 7 Sekunden (4 Sekunden Anzeige + 3 Sekunden Animation)
   setTimeout(function () {
     overlay.style.position = "absolute";
-  }, 6000); // 7000 Millisekunden = 3 Sekunden Anzeige + 3 Sekunden Animation
+  }, 4000); // 7000 Millisekunden = 3 Sekunden Anzeige + 3 Sekunden Animation
 });
 
 window.addEventListener("scroll", function () {
