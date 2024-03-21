@@ -174,7 +174,7 @@ hr {
 
 .first-line {
   margin-top: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 #i-am-sofia {
@@ -255,8 +255,8 @@ hr {
   font-size: var(--fontsize-2);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  /* margin-top: 30px;
+  margin-bottom: 20px; */
 }
 
 .magazin-img {
@@ -360,7 +360,7 @@ footer {
   font-size: var(--fontsize-2);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 20px;
   font-weight: 200;
 }
