@@ -6,6 +6,8 @@
     <title>Sofia Cavelius</title>
     <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/style.css" />
+    <!-- HTMLX -->
+    <script src="https://unpkg.com/htmx.org@1.9.11" integrity="sha384-0gxUXCCR8yv9FM2b+U3FDbsKthCI66oH5IA9fHppQq9DDMHuMauqq1ZHBpJxQ0J0" crossorigin="anonymous"></script>
     <!-- fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/hio3kaz.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,7 +19,7 @@
   </head>
   <body>
     <div id="overlay">
-      <div class="overlay-font">
+      <div id="overlay-font">
         <div>sofia cavelius</div>
         <div>portfolio</div>
       </div>
@@ -27,7 +29,7 @@
       <nav class="navigation">
         <p>contact</p>
         <p>about</p>
-        <p>work</p>
+        <a href="pagetwo.html">work</a>
       </nav>
       <div class="chapter">
         <p>sofia cavelius</p>
@@ -39,8 +41,9 @@
       <section class="title-section">
         <!-- <hr class="chapter-line" /> -->
         <div class="title-welcome">
-          welcome to my portfolio, <br />
+         <p> welcome to my portfolio, <br />
           here you can find some design projects from me
+        </p>
         </div>
         <div class="title-tag-and-img">
           <div class="title-tags">
@@ -54,11 +57,13 @@
           <img id="lets-connect" src="img/lets-connect.png" alt="lets connect" />
           <img class="title-img" src="img/sofia.jpg" alt="sofia" />
         </div>
-        <hr />
+        <hr class="first-line" />
       </section>
       <section class="work-section">
         <div class="headline-chapter">
-          work
+          <p>
+            work
+          </p>
         </div>
         <div class="project">
           <div class="container-img-and-text">
@@ -92,7 +97,9 @@
       <section>
         <div class="about-chapter">
           <div class="headline-chapter">
-            about
+            <p>
+              about
+            </p>
           </div>
           <div class="container-about-text">
             <div class="spaceholder"></div>
@@ -123,7 +130,9 @@
     <footer>
       <section class="contact-section">
           <div class="headline-chapter-white">
-            contact
+            <p>
+              contact
+            </p>
           </div>
           <div class="contact-text">
             <div>
