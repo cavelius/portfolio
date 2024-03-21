@@ -212,7 +212,7 @@ hr {
   display: none;
   position: fixed;
   right: 205px;
-  top: 55vh;
+  top: 48vh;
   height: 100vh;
   width: 122px;
   height: 30px;
@@ -264,7 +264,7 @@ hr {
 }
 
 .container-img-and-text {
-  margin: 30px;
+  margin: 1.5vw;
 }
 
 .project {
@@ -316,26 +316,29 @@ hr {
 
 .container-about-text {
   display: flex;
-  justify-content: start;
 }
 
 .spaceholder {
-  width: 35vw;
-  /* background-color: black; */
+  flex: 0 0 36.5vw; /* Keine Flexibilität, feste Breite von 36.5vw */
 }
 
 .about-text {
-  width: 50vw;
+  flex: 0.7;
+}
+
+.about-text-big {
+  /* width: 95%; */
 }
 
 .about-text-smal {
+  /* width: 75%; */
   font-family: var(--roc);
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
-  text-transform: lowercase;
+  text-transform: none;
   letter-spacing: 0;
-  width: 40vw;
+  margin-top: 20px;
 }
 
 footer {

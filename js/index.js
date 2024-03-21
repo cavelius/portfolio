@@ -44,12 +44,12 @@ document.addEventListener("scroll", () => {
   } else {
     someOfMyDesignns.style.display = "none"; // Bild ausblenden
   }
-  if (percentage >= 28.085867620751344 && percentage < 75.07751937984496) {
+  if (percentage >= 28.085867620751344 && percentage < 62.797747942832395) {
     clickOnIt.style.display = "block"; // Bild anzeigen
   } else {
     clickOnIt.style.display = "none"; // Bild ausblenden
   }
-  if (percentage >= 86.8410927279723 && percentage < 96.6010733452594) {
+  if (percentage >= 76.91641403204851 && percentage < 96.6010733452594) {
     aboutMe.style.display = "block"; // Bild anzeigen
   } else {
     aboutMe.style.display = "none"; // Bild ausblenden
