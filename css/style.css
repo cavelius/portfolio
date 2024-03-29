@@ -2,9 +2,13 @@
   --roc: "roc-grotesk", sans-serif;
   --space: "Space Grotesk", sans-serif;
 
-  --fontsize-1: 10px;
-  --fontsize-2: 20px;
-  --fontsize-3: 40px;
+  --fontsize-1: 0.8rem; /* navigation */
+  --fontsize-2: 0, 1rem; /* chapter heads, */
+  --fontsize-3: 1.7rem; /* headlines */
+  --fontsize-4: 1.2rem; /* welcome */
+
+  --letter-spacing-3: 0.025em;
+  --letter-spacing-4: 0.04em;
 
   --color-1: lightgray;
   --color-2: black;
@@ -14,7 +18,13 @@
   padding: 0;
 }
 
-p {
+html {
+  scroll-behavior: smooth;
+}
+
+/* .text-animation {
+  position: relative; 
+  top: 0; 
   margin: 0;
   padding: 0;
   animation: fade linear;
@@ -22,13 +32,23 @@ p {
 }
 
 @keyframes fade {
-  from {
+  0% {
     opacity: 0;
+    top: -35px;
   }
-  to {
+  10% {
+    opacity: 0;
+    top: -35px;
+  }
+  35% {
+    opacity: 0.5;
+    top: -35px;
+  }
+  60% {
     opacity: 1;
+    top: 0; 
   }
-}
+} */
 
 .magazin-img {
   margin: 0;
@@ -38,11 +58,16 @@ p {
 }
 
 @keyframes fade-img {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  20% {
+    opacity: 0;
+    top: -80px; /* Verschiebe das Element um 10px nach oben */
+  }
+  100% {
     opacity: 1;
+    top: 0; /* Stelle sicher, dass die Position auf 0 bleibt */
   }
 }
 
@@ -69,7 +94,7 @@ p {
     letter-spacing: 0.045em;
   }
   100% {
-    font-size: 20px; /* End-Schriftgröße */
+    font-size: var(--fontsize-2); /* End-Schriftgröße */
     color: black;
     letter-spacing: 0.04em;
   }
@@ -108,17 +133,23 @@ header {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .navigation {
   font-family: var(--roc);
-  font-size: 12px;
+  font-size: var(--fontsize-1);
   text-transform: uppercase;
-  gap: 60px;
+  gap: 50px;
   display: flex;
   justify-content: space-between;
   position: fixed;
   transform: rotate(-90deg);
-  top: 50vh;
-  left: -90px;
+  top: 45vh;
+  left: -80px;
+  text-decoration: none;
 }
 
 img {
@@ -127,15 +158,12 @@ img {
 }
 
 .chapter {
-  /* position: fixed; */
-  /* top: 30px;
-  right: 70px; */
   display: flex;
   justify-content: space-between;
   text-align: end;
   font-family: var(--roc);
   font-size: var(--fontsize-2);
-  letter-spacing: 0.04em;
+  letter-spacing: var(--letter-spacing-4);
   margin: 0;
   text-transform: uppercase;
   color: white;
@@ -155,37 +183,88 @@ hr {
   padding: 0;
 }
 
-.title-welcome {
-  /* border: 1px solid red; */
-  font-family: var(--roc);
-  font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  height: 50vh;
-  margin-top: 100px;
+.title-text {
+  margin-top: 36vh;
+  margin-bottom: 3vw;
+  position: relative; /* Stellen Sie sicher, dass die Position relativ ist */
+  z-index: 2; /* Setzen Sie eine höhere z-index */
 }
 
-.title-tag-and-img {
-  /* border: 5px solid green; */
+.title-text p {
+  padding: 0;
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4vw;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+.title-1 {
+  margin: 0;
+  margin-top: -16px;
+}
+.title-2 {
+  margin: 0;
+  margin-top: -16px;
+  margin-left: 29.1vw;
+}
+.title-3 {
+  margin: 0;
+  margin-top: -16px;
+  font-family: "ivypresto-display", serif;
+  font-weight: 400;
+  font-style: italic;
+  margin-left: 29.1vw;
+}
+.title-4 {
+  margin: 0;
+  margin-top: -16px;
+  margin-left: 47.5vw;
+}
+
+.title-img {
   display: flex;
-  justify-content: space-between;
-  align-items: end;
+  width: 50vw;
+  position: relative; /* Stellen Sie sicher, dass die Position relativ ist */
+  z-index: 1; /* Setzen Sie eine niedrigere z-index */
+}
+
+.sofia-img {
+  z-index: 1;
+  position: fixed;
+  top: 53vh;
+  right: 100px;
+  height: 25vh;
+  margin-bottom: 7px;
+  transform: scaleX(-1);
 }
 
 .first-line {
   margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 #i-am-sofia {
-  /* display: none; */
   position: fixed;
-  right: 205px;
-  top: 55vh;
+  right: 215px;
+  top: 65vh;
   height: 100vh;
   width: 120px;
   height: 50px;
   z-index: 3;
+}
+
+.tags {
+  position: absolute;
+  top: 700px;
+  left: 800px;
+  display: flex;
+  font-family: var(--roc);
+  font-size: var(--fontsize-1);
+  gap: 50px;
 }
 
 #some-of-my-designs {
@@ -221,28 +300,19 @@ hr {
 #lets-connect {
   display: none;
   position: fixed;
-  right: 205px;
-  top: 51vh;
+  right: 222px;
+  top: 60vh;
   height: 100vh;
   width: 140px;
   height: 18px;
   z-index: 3;
 }
 
-.title-img {
-  z-index: 1;
-  position: fixed;
-  right: 100px;
-  height: 200px;
-  margin-bottom: 7px;
-  transform: scaleX(-1);
-}
-
 .title-tags {
   font-family: var(--roc);
-  font-size: 16px;
+  font-size: var(--fontsize-2);
   display: flex;
-  gap: 20px;
+  margin-right: 20px;
 }
 
 .work-section {
@@ -291,16 +361,16 @@ hr {
 
 .project-rubric {
   font-family: var(--roc);
-  font-size: var(--fontsize-2);
+  font-size: var(--fontsize-4);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 35px;
 }
 
 .proect-description {
   font-family: var(--roc);
-  font-size: 16px;
+  font-size: var(--fontsize-2);
   margin: 0;
   margin-bottom: 40px;
 }
@@ -328,12 +398,12 @@ hr {
 
 .about-text-big {
   /* width: 95%; */
+  font-size: var(--fontsize-4);
 }
 
 .about-text-smal {
-  /* width: 75%; */
   font-family: var(--roc);
-  font-size: 16px;
+  font-size: var(--fontsize-2);
   font-weight: 500;
   font-style: normal;
   text-transform: none;
@@ -342,22 +412,22 @@ hr {
 }
 
 footer {
-  margin-top: 250px;
+  margin-top: 350px;
   padding-top: 20px;
   padding-bottom: 40px;
   background-color: black;
-  height: 36vh;
 }
 
 .contact-section {
   /* border: 1px solid red; */
   margin: 0px 100px 0px 100px;
+  height: 37vh;
 }
 
 .headline-chapter-white {
   color: white;
   font-family: var(--roc);
-  font-size: var(--fontsize-2);
+  font-size: var(--fontsize-3);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-top: 50px;
@@ -372,10 +442,20 @@ footer {
   align-items: end;
   gap: 50px;
   font-family: var(--roc);
-  font-size: 13px;
+  font-size: var(--fontsize-1);
   font-weight: 200;
   font-style: normal;
   text-transform: lowercase;
   letter-spacing: 0;
   margin-top: 25vh;
+}
+
+.socials a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  text-decoration: underline;
 }

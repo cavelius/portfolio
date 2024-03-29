@@ -9,7 +9,9 @@
     <!-- HTMLX -->
     <script src="https://unpkg.com/htmx.org@1.9.11" integrity="sha384-0gxUXCCR8yv9FM2b+U3FDbsKthCI66oH5IA9fHppQq9DDMHuMauqq1ZHBpJxQ0J0" crossorigin="anonymous"></script>
     <!-- fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/hio3kaz.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/fvi2yyp.css">
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/fvi2yyp.css"> -->
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/hio3kaz.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,9 +29,9 @@
     <!-- header -->
     <header>
       <nav class="navigation">
-        <p>contact</p>
-        <p>about</p>
-        <a href="pagetwo.html">work</a>
+        <a href="#contact">contact</a>
+        <a href="#about">about</a>  
+        <a href="#work">work</a>
       </nav>
       <div class="chapter">
         <p>sofia cavelius</p>
@@ -39,42 +41,39 @@
     <!-- main -->
     <main>
       <section class="title-section">
-        <!-- <hr class="chapter-line" /> -->
-        <div class="title-welcome">
-         <p> welcome to my portfolio, <br />
-          here you can find some design projects from me
-        </p>
+        <div class="title-text">
+          <p class="title-1"> welcome to my portfolio, </p>
+          <p class="title-2">here you can find some </p>
+          <p class="title-3">design projects</p>
+          <p class="title-4">from me</p>
+          </p>
         </div>
-        <div class="title-tag-and-img">
-          <div class="title-tags">
-            <p>graphicdesign</p>
-            <p>illustration</p>
-          </div>
-          <img id="i-am-sofia" src="img/iam-sofia.png" alt="I am Sofia" />
-          <img id="some-of-my-designs" src="img/some-of-my-designs.png" alt="das ist cool" />
-          <img id="click-on-it" src="img/click-on-it.png" alt="click on it" />
-          <img id="about-me" src="img/about-me.png" alt="about me" />
-          <img id="lets-connect" src="img/lets-connect.png" alt="lets connect" />
-          <img class="title-img" src="img/sofia.jpg" alt="sofia" />
-        </div>
-        <hr class="first-line" />
       </section>
+      <div class="title-img">
+        <img class="sofia-img" src="img/sofia.jpg" alt="sofia" />
+        <img id="i-am-sofia" src="img/iam-sofia.png" alt="I am Sofia" />
+        <img id="some-of-my-designs" src="img/some-of-my-designs.png" alt="das ist cool" />
+        <img id="click-on-it" src="img/click-on-it.png" alt="click on it" />
+        <img id="about-me" src="img/about-me.png" alt="about me" />
+        <img id="lets-connect" src="img/lets-connect.png" alt="lets connect" />
+      </div>
       <section class="work-section">
         <div class="headline-chapter">
           <p>
-            work
+            [work]
           </p>
         </div>
         <div class="project">
-          <div class="container-img-and-text">
+          <a href="things-we-write.html" class="container-img-and-text">
             <img class="magazin-img" src="img/tww-cover.png" alt="tww-cover" />
             <p class="project-rubric">editorial</p>
             <p class="proect-description">magazin</p>
-          </div>
+          </a>
+          
 
         </div>
         <div class="project-right">
-          <div class="container-img-and-text">
+          <a href="adventskalender.html" class="container-img-and-text">
             <img
             class="magazin-img"
             src="img/adventskalender.png"
@@ -82,22 +81,22 @@
             />
             <p class="project-rubric">packaging</p>
             <p class="proect-description">adventcalendar</p>
-          </div>
+          </a>
         </div>
         <div class="project">
-          <div class="container-img-and-text">
+          <a href="calender-collection.html" class="container-img-and-text">
             <img class="magazin-img" src="img/kalender-2024.png" alt="tww-cover" />
             <p class="project-rubric">layout</p>
             <p class="proect-description">kalender collection</p>
-          </div>
+          </a>
 
         </div>
       </section>
-      <hr class="first-line" />
+      <hr id="about" class="first-line" />
       <section>
         <div class="about-chapter">
           <div class="headline-chapter">
-            <p>
+            <p id="contact-start">
               about
             </p>
           </div>
@@ -125,7 +124,7 @@
    
     </main>
     <!-- footer -->
-    <footer>
+    <footer id="contact">
       <section class="contact-section">
           <div class="headline-chapter-white">
             <p>
@@ -138,10 +137,13 @@
               sofia.cavelius@web.de
             </div>
             <div>
-              or connect with me on socials <br>
-              linked in
-              instagram
-              github
+              or connect with me on socials
+              <div class="socials">
+               <a href="https://www.linkedin.com/in/sofiacavelius/"> linked in</a>
+               <a href="https://www.instagram.com/_sofiasart/"> instagram in</a>
+               <a href="https://github.com/cavelius"> github</a>
+   
+              </div>
             </div>
             <div>
               designed and developed by Sofia Cavelius
