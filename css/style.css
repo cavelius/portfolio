@@ -614,19 +614,19 @@ footer {
   }
 
   .headline-chapter {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .headline-chapter-white {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .project-rubric {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .proect-description {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .spaceholder {
@@ -634,12 +634,12 @@ footer {
   }
 
   .about-text-big {
-    font-size: 4vw;
-    line-height: 4.6vw;
+    font-size: 6vw;
+    line-height: 6.6vw;
   }
 
   .about-text-smal {
-    font-size: 1.9vw;
+    font-size: 3vw;
     font-weight: 500;
     text-transform: none;
     letter-spacing: 0;
@@ -662,25 +662,31 @@ footer {
   }
 
   .socials a {
-    font-size: 1.9vw;
+    font-size: 3vw;
     margin-right: 0px;
     display: block;
   }
 
   .arrow {
-    width: 1vw;
+    width: 1.6vw;
     display: inline-block;
   }
+
+  footer {
+    background-color: black;
+    height: 45vh;
+    padding: 3.5vw 7vw 3.5vw 7vw;
+    height: 30vh;
+  }
+
+  .contact-text {
+    display: block;
+    font-size: 3vw;
+    font-weight: 100;
+  }
+
+  .made-by {
+    text-align: end;
+    margin: 10vw 0 0 0;
+  }
 }
-
-/* ----------- kleinster titel -------- */
-
-/* @media (max-width: 468px) {
-  .title-text .title-5 {
-    margin-left: 0px;
-  }
-
-  .title-text .title-6 {
-    margin-left: 1px;
-  }
-} */
