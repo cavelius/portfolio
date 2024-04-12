@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     overlay.style.position = "absolute";
     overlay.style.zIndex = "-1";
-  }, 4000); // 7000 Millisekunden = 3 Sekunden Anzeige + 3 Sekunden Animation
+  }, 3000); // 7000 Millisekunden = 3 Sekunden Anzeige + 3 Sekunden Animation
 });
 
 function calculateScrollPercentage() {
