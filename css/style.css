@@ -2,15 +2,13 @@
   --roc: "roc-grotesk", sans-serif;
   --space: "Space Grotesk", sans-serif;
 
-  /* --fontsize-1: 0.8rem; 
-  --fontsize-2: 0, 1rem; 
-  --fontsize-3: 1.7rem; 
-  --fontsize-4: 1.2rem;  */
-
   --fontsize-1: 0.7vw; /* navigation */
   --fontsize-2: 0.9vw; /* chapter heads */
   --fontsize-4: 2vw; /* welcome */
   --fontsize-3: 3vw; /* headlines */
+
+  --fontsize-5: 1vw;
+  --fontsize-6: 1.1vw;
 
   --letter-spacing-3: 0.025em;
   --letter-spacing-4: 0.04em;
@@ -26,34 +24,6 @@
 html {
   scroll-behavior: smooth;
 }
-
-/* .text-animation {
-  position: relative;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  animation: fade linear;
-  animation-timeline: view(block 60% 0%);
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-    top: 35px;
-  }
-  10% {
-    opacity: 0;
-    top: 35px;
-  }
-  35% {
-    opacity: 0.5;
-    top: 35px;
-  }
-  60% {
-    opacity: 1;
-    top: 0;
-  }
-} */
 
 .project-img {
   margin: 0;
@@ -82,7 +52,6 @@ html {
 }
 
 #overlay-font {
-  /* z-index: 90; */
   color: white;
   display: flex;
   justify-content: space-between;
@@ -167,10 +136,6 @@ p {
   padding: 0;
 }
 
-/* .start-space {
-  height: 20vh;
-} */
-
 .navigation {
   font-family: var(--roc);
   font-size: var(--fontsize-1);
@@ -232,16 +197,6 @@ span {
   animation: fade-text-title linear;
   animation-timeline: view(block 0% 0%); */
 }
-
-/* @keyframes fade-text-title {
-  0% {
-    line-height: 0.1vh;
-  }
-
-  100% {
-    line-height: 6vh;
-  }
-} */
 
 .title-text .title-1 {
   margin: 0;
@@ -347,7 +302,7 @@ span {
   width: 8vw;
   height: auto;
   z-index: 3;
-  transform: translate(36%, 200%);
+  transform: translate(30%, 200%);
 }
 #lets-connect {
   display: none;
@@ -540,7 +495,7 @@ footer {
   align-items: start;
   gap: 50px;
   font-family: var(--roc);
-  font-size: var(--fontsize-1);
+  font-size: var(--fontsize-2);
   font-weight: 100;
   text-transform: lowercase;
   letter-spacing: 0;
@@ -552,14 +507,14 @@ footer {
 }
 
 .socials a {
-  font-size: var(--fontsize-1);
+  font-size: var(--fontsize-2);
   color: white;
   margin-right: 20px;
   text-decoration: none;
 }
 
 .arrow {
-  width: 0.4vw;
+  width: 0.6vw;
   display: inline-block;
 }
 
@@ -569,7 +524,21 @@ footer {
 
 /*---------- mobile M Viewport---------- */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .headline-chapter {
+    font-size: 1.2vw;
+  }
+  .headline-chapter-white {
+    font-size: 1.2vw;
+  }
+
+  .contact-text {
+    margin-top: 50vh;
+  }
+}
+/*---------- mobile Tablet---------- */
+
+@media (max-width: 1024px) {
 }
 /*---------- mobile S Viewport---------- */
 
