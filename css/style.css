@@ -531,15 +531,12 @@ footer {
   .headline-chapter-white {
     font-size: 1.2vw;
   }
-
   .contact-text {
-    margin-top: 50vh;
+    margin-top: 40vh;
   }
 }
 /*---------- mobile Tablet---------- */
 
-@media (max-width: 1024px) {
-}
 /*---------- mobile S Viewport---------- */
 
 /* overlay font */
