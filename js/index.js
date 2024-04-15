@@ -39,63 +39,24 @@ document.addEventListener("scroll", () => {
   } else {
     iAmSofia.style.display = "none"; // Bild ausblenden
   }
-  if (percentage >= 12.68976255352277 && percentage < 22.003577817531305) {
+  if (percentage >= 12.68976255352277 && percentage < 42.78676988036594) {
     someOfMyDesignns.style.display = "block"; // Bild anzeigen
   } else {
     someOfMyDesignns.style.display = "none"; // Bild ausblenden
   }
-  if (percentage >= 28.085867620751344 && percentage < 62.797747942832395) {
+  if (percentage >= 48.55328158080452 && percentage < 62.797747942832395) {
     clickOnIt.style.display = "block"; // Bild anzeigen
   } else {
     clickOnIt.style.display = "none"; // Bild ausblenden
   }
-  if (percentage >= 76.91641403204851 && percentage < 96.6010733452594) {
+  if (percentage >= 76.91641403204851 && percentage < 90) {
     aboutMe.style.display = "block"; // Bild anzeigen
   } else {
     aboutMe.style.display = "none"; // Bild ausblenden
   }
-  if (percentage >= 100) {
+  if (percentage >= 98) {
     letsConnect.style.display = "block"; // Bild anzeigen
   } else {
     letsConnect.style.display = "none"; // Bild ausblenden
   }
 });
-
-// window.addEventListener("scroll", function () {
-//   var scrollY = window.scrollY;
-//   var iAmSofia = document.getElementById("i-am-sofia");
-//   var someOfMyDesignns = document.getElementById("some-of-my-designs");
-//   var clickOnIt = document.getElementById("click-on-it");
-//   var aboutMe = document.getElementById("about-me");
-//   var letsConnect = document.getElementById("lets-connect");
-//   console.log("position of the window on the total webpage", scrollY);
-//   console.log("height of the webpage", document.body.clientHeight);
-
-//   const height = document.body.clientHeight; //100%
-
-//   if (scrollY >= -1 && scrollY < 110) {
-//     iAmSofia.style.display = "block"; // Bild anzeigen
-//   } else {
-//     iAmSofia.style.display = "none"; // Bild ausblenden
-//   }
-//   if (scrollY >= 219 && scrollY < 500) {
-//     someOfMyDesignns.style.display = "block"; // Bild anzeigen
-//   } else {
-//     someOfMyDesignns.style.display = "none"; // Bild ausblenden
-//   }
-//   if (scrollY >= 540 && scrollY < 1800) {
-//     clickOnIt.style.display = "block"; // Bild anzeigen
-//   } else {
-//     clickOnIt.style.display = "none"; // Bild ausblenden
-//   }
-//   if (scrollY >= 2350 && scrollY < 2983) {
-//     aboutMe.style.display = "block"; // Bild anzeigen
-//   } else {
-//     aboutMe.style.display = "none"; // Bild ausblenden
-//   }
-//     if (scrollY >= 2500 && scrollY < 3000) {
-//       letsConnect.style.display = "block"; // Bild anzeigen
-//     } else {
-//       letsConnect.style.display = "none"; // Bild ausblenden
-//     }
-// });

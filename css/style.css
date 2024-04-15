@@ -286,7 +286,6 @@ span {
 .sofia-img {
   z-index: 1;
   right: 8.5vw;
-  transform: scaleX(-1);
   width: 11vw;
   height: auto;
   object-fit: contain;
@@ -305,8 +304,8 @@ span {
 
 .first-line {
   width: 100%;
-  margin-top: 30px;
-  margin-bottom: 80px;
+  margin-top: 20vw;
+  margin-bottom: 7vw;
   animation: line linear;
   animation-timeline: view(block 0% 0%);
 }
@@ -355,7 +354,7 @@ span {
   width: 10vw;
   height: auto;
   z-index: 3;
-  transform: translate(-10%, 80%);
+  transform: translate(-10%, 440%);
 }
 
 .work-section {
@@ -386,7 +385,7 @@ span {
 }
 
 .project {
-  margin-bottom: -200px;
+  margin-bottom: -20vw;
   display: flex;
 }
 
@@ -395,7 +394,7 @@ span {
 }
 
 .project-right {
-  margin-bottom: -200px;
+  margin-bottom: -20vw;
   display: flex;
   justify-content: end;
 }
@@ -445,7 +444,7 @@ span {
 }
 
 .about-section {
-  margin-top: 20vw;
+  margin-top: 25vw;
   margin-bottom: 20vw;
 }
 
@@ -485,6 +484,7 @@ span {
 .about-text-smal {
   font-family: var(--roc);
   font-size: var(--fontsize-2);
+  line-height: 1.25vw;
   font-weight: 500;
   text-transform: none;
   letter-spacing: 0;
@@ -559,7 +559,7 @@ footer {
 }
 
 .arrow {
-  width: 0.6vw;
+  width: 0.4vw;
   display: inline-block;
 }
 
@@ -567,6 +567,10 @@ footer {
   text-decoration: underline;
 }
 
+/*---------- mobile M Viewport---------- */
+
+@media (max-width: 768px) {
+}
 /*---------- mobile S Viewport---------- */
 
 /* overlay font */
@@ -699,34 +703,35 @@ footer {
     width: 25vw;
     height: auto;
     margin-right: -1.3vw;
+    transform: translate(0%, -55%);
   }
 
   #i-am-sofia {
     width: 20vw;
     height: auto;
-    transform: translate(40%, -250%);
+    transform: translate(40%, -350%);
   }
 
   #some-of-my-designs {
-    width: 30vw;
+    width: 27vw;
     height: auto;
-    transform: translate(70%, -400%);
+    transform: translate(70%, -590%);
   }
 
   #click-on-it {
     width: 25vw;
     height: auto;
-    transform: translate(60%, -490%);
+    transform: translate(60%, -620%);
   }
   #about-me {
     width: 20vw;
     height: auto;
-    transform: translate(40%, -350%);
+    transform: translate(80%, -690%);
   }
   #lets-connect {
     width: 25vw;
     height: auto;
-    transform: translate(-5%, 80%);
+    transform: translate(60%, -1270%);
   }
 
   .headline-chapter {
@@ -745,18 +750,24 @@ footer {
     font-size: 3vw;
   }
 
+  .container-about-text {
+    display: flex;
+    width: 83vw;
+  }
+
   .spaceholder {
     display: none;
   }
 
   .about-text-big {
-    font-size: 6vw;
-    line-height: 6.6vw;
+    font-size: 5.5vw;
+    line-height: 6.3vw;
   }
 
   .about-text-smal {
     font-size: 3vw;
-    font-weight: 500;
+    line-height: 3.7vw;
+    font-weight: 400;
     text-transform: none;
     letter-spacing: 0;
     margin-top: 20px;
