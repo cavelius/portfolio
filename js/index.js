@@ -60,3 +60,17 @@ document.addEventListener("scroll", () => {
     letsConnect.style.display = "none"; // Bild ausblenden
   }
 });
+
+// Mobile menu
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Ihr JavaScript-Code hier
+
+  const hamMenu = document.querySelector(".ham-menu");
+  const offScreenMenu = document.querySelector(".off-screen-menu");
+
+  hamMenu.addEventListener("click", () => {
+    hamMenu.classList.toggle("active");
+    offScreenMenu.classList.toggle("active");
+  });
+});
