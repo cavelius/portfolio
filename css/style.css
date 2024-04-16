@@ -626,7 +626,7 @@ footer {
     font-weight: 500;
     font-style: normal;
     text-transform: uppercase;
-    line-height: 9vw;
+    line-height: 20vw;
   }
   .menu-text-contact {
     text-decoration: none;
@@ -642,6 +642,7 @@ footer {
   .menu-text {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
   nav {
     padding: 1rem;

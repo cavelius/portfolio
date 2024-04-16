@@ -71,18 +71,24 @@ document.addEventListener("DOMContentLoaded", function () {
   const linkContact = document.querySelector(".menu-text-contact");
 
   linkWork.addEventListener("click", () => {
-    hamMenu.classList.toggle("active");
-    offScreenMenu.classList.toggle("active");
+    setTimeout(() => {
+      hamMenu.classList.toggle("active");
+      offScreenMenu.classList.toggle("active");
+    }, 300);
   });
 
   linkAbout.addEventListener("click", () => {
-    hamMenu.classList.toggle("active");
-    offScreenMenu.classList.toggle("active");
+    setTimeout(() => {
+      hamMenu.classList.toggle("active");
+      offScreenMenu.classList.toggle("active");
+    }, 300);
   });
 
   linkContact.addEventListener("click", () => {
-    hamMenu.classList.toggle("active");
-    offScreenMenu.classList.toggle("active");
+    setTimeout(() => {
+      hamMenu.classList.toggle("active");
+      offScreenMenu.classList.toggle("active");
+    }, 300);
   });
 
   hamMenu.addEventListener("click", () => {
