@@ -64,10 +64,26 @@ document.addEventListener("scroll", () => {
 // Mobile menu
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Ihr JavaScript-Code hier
-
   const hamMenu = document.querySelector(".ham-menu");
   const offScreenMenu = document.querySelector(".off-screen-menu");
+  const linkWork = document.querySelector(".menu-text-work");
+  const linkAbout = document.querySelector(".menu-text-about");
+  const linkContact = document.querySelector(".menu-text-contact");
+
+  linkWork.addEventListener("click", () => {
+    hamMenu.classList.toggle("active");
+    offScreenMenu.classList.toggle("active");
+  });
+
+  linkAbout.addEventListener("click", () => {
+    hamMenu.classList.toggle("active");
+    offScreenMenu.classList.toggle("active");
+  });
+
+  linkContact.addEventListener("click", () => {
+    hamMenu.classList.toggle("active");
+    offScreenMenu.classList.toggle("active");
+  });
 
   hamMenu.addEventListener("click", () => {
     hamMenu.classList.toggle("active");

@@ -608,7 +608,8 @@ footer {
     right: 0;
   }
 
-  .menu-text {
+  .menu-text-work {
+    text-decoration: none;
     color: white;
     font-family: "neue-haas-grotesk-text", sans-serif;
     font-size: 6.4vw;
@@ -616,6 +617,31 @@ footer {
     font-style: normal;
     text-transform: uppercase;
     line-height: 9vw;
+  }
+  .menu-text-about {
+    text-decoration: none;
+    color: white;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-size: 6.4vw;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 9vw;
+  }
+  .menu-text-contact {
+    text-decoration: none;
+    color: white;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-size: 6.4vw;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 9vw;
+  }
+
+  .menu-text {
+    display: flex;
+    flex-direction: column;
   }
   nav {
     padding: 1rem;
@@ -850,10 +876,11 @@ footer {
     font-weight: 100;
     text-transform: lowercase;
     letter-spacing: 0;
+    margin-top: 8vh;
   }
 
   .socials a {
-    font-size: 3vw;
+    font-size: 2.4vw;
     margin-right: 0px;
     display: block;
   }
@@ -872,7 +899,7 @@ footer {
 
   .contact-text {
     display: block;
-    font-size: 3vw;
+    font-size: 2.4vw;
     font-weight: 100;
   }
 
