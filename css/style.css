@@ -210,9 +210,17 @@ span {
   text-transform: uppercase;
   z-index: 4;
   position: relative;
-  /* line-height: 0.1vh;
-  animation: fade-text-title linear;
-  animation-timeline: view(block 0% 0%); */
+  line-height: 15vw;
+  animation: line-heightAnimation 3s forwards; /* CSS-Animation mit Dauer und Effekten */
+}
+
+@keyframes line-heightAnimation {
+  from {
+    line-height: 15vw;
+  }
+  to {
+    line-height: 4vw;
+  }
 }
 
 .title-text .title-1 {
@@ -707,14 +715,12 @@ footer {
     display: inline;
     margin-left: 0vw;
     font-size: 6.4vw;
-    line-height: 8vw;
   }
 
   .title-text .title-2 {
     display: block;
     margin-left: 0vw;
     font-size: 6.4vw;
-    line-height: 8vw;
     margin-bottom: 3vw;
   }
 
@@ -722,7 +728,6 @@ footer {
     display: inline;
     margin-left: 0vw;
     font-size: 6.4vw;
-    line-height: 8vw;
   }
 
   .title-text .title-4 {
@@ -730,14 +735,12 @@ footer {
     margin-left: 1.5vw;
     margin-right: 1vw;
     font-size: 6.4vw;
-    line-height: 8vw;
   }
 
   .title-text .title-5 {
     display: inline;
     /* margin-left: 1vw; */
     font-size: 6.4vw;
-    line-height: 8vw;
   }
 
   .title-text .title-6 {
@@ -745,11 +748,24 @@ footer {
     margin-left: 0vw;
     margin-right: 1vw;
     font-size: 6.4vw;
-    line-height: 8vw;
   }
 
   .title-text {
     margin-top: 60vh;
+  }
+
+  .title-text span {
+    line-height: 50vw;
+    animation: line-heightAnimation 3s forwards; /* CSS-Animation mit Dauer und Effekten */
+  }
+
+  @keyframes line-heightAnimation {
+    from {
+      line-height: 50vw;
+    }
+    to {
+      line-height: 8vw;
+    }
   }
 
   /* projects */
