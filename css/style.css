@@ -61,6 +61,8 @@ html {
   letter-spacing: 0.045em;
   text-transform: uppercase;
   margin: 3vw 7vw 0 7vw;
+  position: fixed;
+  width: 85.9%;
   animation: schriftGroesse 1s 2s forwards;
 }
 
@@ -132,8 +134,14 @@ a {
   color: black;
 }
 
+ul,
+h1,
 p {
   padding: 0;
+}
+
+h1 {
+  margin: 0;
 }
 
 /* die lis sind nur für das Burgermenü */
@@ -211,15 +219,21 @@ span {
   z-index: 4;
   position: relative;
   line-height: 15vw;
+  opacity: 0;
   animation: line-heightAnimation 3s forwards; /* CSS-Animation mit Dauer und Effekten */
 }
 
 @keyframes line-heightAnimation {
-  from {
+  0% {
     line-height: 15vw;
+    opacity: 0;
   }
-  to {
+  75% {
+    opacity: 0.7;
+  }
+  100% {
     line-height: 4vw;
+    opacity: 1;
   }
 }
 
@@ -626,6 +640,7 @@ footer {
     text-transform: uppercase;
     line-height: 9vw;
   }
+
   .menu-text-about {
     text-decoration: none;
     color: white;
@@ -634,8 +649,14 @@ footer {
     font-weight: 500;
     font-style: normal;
     text-transform: uppercase;
+    line-height: 50vw;
+    transition: 0.7s ease;
+  }
+
+  .menu-text-about.active {
     line-height: 20vw;
   }
+
   .menu-text-contact {
     text-decoration: none;
     color: white;
@@ -658,6 +679,7 @@ footer {
     z-index: 101;
     position: fixed;
     right: 3vw;
+    top: 0;
   }
 
   .ham-menu {
@@ -701,6 +723,10 @@ footer {
     top: 45%;
     transform: translate(-50%, 50%) rotate(-45deg);
     background-color: white;
+  }
+
+  .ham-menu.active {
+    animation: line-heightAnimation-menu 13s forwards; /* CSS-Animation mit Dauer und Effekten */
   }
 
   /* navigation */
@@ -752,6 +778,7 @@ footer {
 
   .title-text {
     margin-top: 60vh;
+    opacity: 1;
   }
 
   .title-text span {
@@ -923,5 +950,148 @@ footer {
   .made-by {
     text-align: end;
     margin: 10vw 0 0 0;
+  }
+}
+
+/* SUBPAGES */
+
+#subpage-overlay-font {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--roc);
+  font-size: 4vw;
+  font-weight: 500;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  margin: 3vw 7vw 0 7vw;
+  font-size: var(--fontsize-2); /* End-Schriftgröße */
+  color: black;
+  letter-spacing: 0.045em;
+  margin-bottom: 0px;
+  position: fixed;
+  width: 85.9%;
+}
+
+.subpage-body {
+}
+
+#subpage-chapter {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--roc);
+  font-size: var(--fontsize-2);
+  font-weight: 500;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  margin: 3vw 7vw 0 7vw;
+  position: fixed;
+  width: 85.9%;
+  z-index: 3;
+}
+
+.subpage-title {
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+  position: fixed;
+  /* border: 1px red solid; */
+  margin-top: 10vw;
+}
+
+.subpage-title-one {
+  /* border: blue 1px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: var(--roc);
+  height: 70vh;
+}
+
+.subpage-title-two {
+  /* border: green 1px solid; */
+
+  font-family: var(--roc);
+}
+
+.subpage-headline {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-size: var(--fontsize-4);
+  line-height: 2.6vw;
+  letter-spacing: 0.01vw;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.subpage-title-long-text {
+  font-family: var(--roc);
+  font-size: var(--fontsize-2);
+  line-height: 1.25vw;
+  margin: 0;
+}
+
+.subpage-title-ul {
+  margin: 0;
+  font-size: var(--fontsize-2);
+}
+
+li:first-child {
+  text-transform: uppercase;
+}
+
+.subpage-images {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-top: 10vw;
+}
+
+.supbage-project-img {
+  margin: 0;
+  padding: 0;
+  width: 50vw;
+  height: auto;
+  margin-bottom: 2vw;
+  animation: fade-img linear;
+  /* animation-timeline: view(block 100% 0%); */
+}
+
+/* @keyframes fade-img {
+  0% {
+    opacity: 0;
+    margin-top: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+    margin-top: 5vh;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} */
+
+/*----------SUBPAGE  mobile S Viewport---------- */
+
+@media (max-width: 640px) {
+  .subpage-title {
+    width: auto;
+    position: relative;
+  }
+
+  .supbage-project-img {
+    width: 100%;
+  }
+
+  #subpage-overlay-font {
+    font-size: 3vw; /* End-Schriftgröße */
+    color: black;
+    letter-spacing: 0.04em;
+    justify-content: start;
+    margin: 6vw 7vw 0 7vw;
+    gap: 10px;
   }
 }

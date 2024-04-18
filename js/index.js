@@ -69,11 +69,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const linkWork = document.querySelector(".menu-text-work");
   const linkAbout = document.querySelector(".menu-text-about");
   const linkContact = document.querySelector(".menu-text-contact");
+  const menuText = document.querySelector(".menu-text-about");
 
   linkWork.addEventListener("click", () => {
     setTimeout(() => {
       hamMenu.classList.toggle("active");
       offScreenMenu.classList.toggle("active");
+      menuText.classList.toggle("active");
     }, 300);
   });
 
@@ -81,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
       hamMenu.classList.toggle("active");
       offScreenMenu.classList.toggle("active");
+      menuText.classList.toggle("active");
     }, 300);
   });
 
@@ -88,11 +91,13 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
       hamMenu.classList.toggle("active");
       offScreenMenu.classList.toggle("active");
+      menuText.classList.toggle("active");
     }, 300);
   });
 
   hamMenu.addEventListener("click", () => {
     hamMenu.classList.toggle("active");
     offScreenMenu.classList.toggle("active");
+    menuText.classList.toggle("active");
   });
 });
