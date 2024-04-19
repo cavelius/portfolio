@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Verstecke das Overlay nach 7 Sekunden (4 Sekunden Anzeige + 3 Sekunden Animation)
   setTimeout(function () {
     overlay.style.position = "absolute";
-    overlay.style.zIndex = "-1";
+    overlay.style.zIndex = "1000";
   }, 3000); // 7000 Millisekunden = 3 Sekunden Anzeige + 3 Sekunden Animation
 });
 
