@@ -63,7 +63,7 @@ html {
   margin: 3vw 7vw 0 7vw;
   position: fixed;
   width: 85.9%;
-  animation: schriftGroesse 1s 2s forwards;
+  animation: schriftGroesse 1s 0.7s forwards;
 }
 
 @keyframes schriftGroesse {
@@ -90,7 +90,7 @@ html {
   background-color: rgba(0, 0, 0, 1); /* Startfarbe: Schwarz */
   z-index: 1000; /* Stelle sicher, dass das Overlay über allen anderen Elementen liegt */
   display: block;
-  animation: fadeOut 1s 2s forwards; /* Verzögere die Animation um 5 Sekunden und animiere dann den Übergang von Schwarz zu Transparent über 2 Sekunden */
+  animation: fadeOut 1s 0.7s forwards; /* Verzögere die Animation um 5 Sekunden und animiere dann den Übergang von Schwarz zu Transparent über 2 Sekunden */
 }
 
 @keyframes fadeOut {
@@ -105,7 +105,7 @@ html {
 #animiertesDiv {
   height: 30px;
   /* background-color: blue; */
-  animation: divAnimation 3s forwards; /* CSS-Animation mit Dauer und Effekten */
+  animation: divAnimation 0.5s forwards; /* CSS-Animation mit Dauer und Effekten */
 }
 
 @keyframes divAnimation {
@@ -115,6 +115,11 @@ html {
   to {
     height: 0;
   }
+}
+
+/* CSS-Regeln für den Übergang der Opazität */
+.transition-opacity {
+  transition: opacity 0.5s ease;
 }
 
 body {
@@ -220,12 +225,12 @@ span {
   position: relative;
   line-height: 15vw;
   opacity: 0;
-  animation: line-heightAnimation 3s forwards; /* CSS-Animation mit Dauer und Effekten */
+  animation: line-heightAnimation 1.5s forwards; /* CSS-Animation mit Dauer und Effekten */
 }
 
 @keyframes line-heightAnimation {
   0% {
-    line-height: 15vw;
+    line-height: 12vw;
     opacity: 0;
   }
   75% {
@@ -284,7 +289,7 @@ span {
   height: auto;
   object-fit: contain;
   margin-bottom: 30vh;
-  animation: sofia-img-fadein 3s forwards; /* CSS-Animation mit Dauer und Effekten */
+  animation: sofia-img-fadein 1.5s forwards; /* CSS-Animation mit Dauer und Effekten */
 }
 
 @keyframes sofia-img-fadein {
@@ -354,7 +359,6 @@ span {
 .work-section {
   margin-top: 5vw;
   margin-bottom: 15vw;
-  /* border: 1px solid blue; */
 }
 
 .headline-chapter {
@@ -612,7 +616,6 @@ footer {
     background-color: black;
     height: 100vh;
     width: 100%;
-    /* max-width: 450px; */
     position: fixed;
     top: 0;
     right: -650px;
@@ -953,7 +956,7 @@ footer {
   }
 }
 
-/* SUBPAGES */
+/* ------------SUBPAGES */
 
 .subpage-main {
   display: flex;
@@ -975,10 +978,17 @@ footer {
   letter-spacing: 0.045em;
   margin-bottom: 0px;
   position: fixed;
-  width: 31.9%;
+  width: 85.9%;
+  animation: subpage-overlay-font 1s 0.1s forwards;
 }
 
-.subpage-body {
+@keyframes subpage-overlay-font {
+  0% {
+    width: 85.9%;
+  }
+  100% {
+    width: 31.9%;
+  }
 }
 
 #subpage-chapter {
@@ -1000,22 +1010,18 @@ footer {
   justify-content: space-between;
   width: 32vw;
   position: fixed;
-  /* border: 1px red solid; */
   margin-top: 10vw;
 }
 
 .subpage-title-one {
-  /* border: blue 1px solid; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-family: var(--roc);
-  height: 35vw;
+  height: 38vw;
 }
 
 .subpage-title-two {
-  /* border: green 1px solid; */
-
   font-family: var(--roc);
 }
 
@@ -1035,24 +1041,50 @@ footer {
   margin: 0;
   text-align: justify;
   text-align-last: left;
+  opacity: 0;
+  transform: translateY(1vw);
+  animation: fontAnimation 1s 0.4s forwards;
 }
 
 .subpage-title-ul {
   margin: 0;
   font-size: var(--fontsize-2);
+  opacity: 0;
+  transform: translateY(1vw);
+  animation: fontAnimation 1s 0.3s forwards;
 }
 
-/* li:first-child {
-  text-transform: uppercase;
-} */
+@keyframes fontAnimation {
+  0% {
+    transform: translateY(1vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0vw);
+    opacity: 1;
+  }
+}
 
 .subpage-images {
   display: flex;
   flex-direction: column;
   align-items: end;
   padding-top: 3vw;
-  right: -7vw;
+  opacity: 0;
   position: relative;
+  z-index: 10000;
+  animation: imagesAnimation 1s 0.1s forwards;
+}
+
+@keyframes imagesAnimation {
+  0% {
+    opacity: 0;
+    right: -100vw;
+  }
+  100% {
+    opacity: 1;
+    right: -7vw;
+  }
 }
 
 .supbage-project-img {
@@ -1062,28 +1094,29 @@ footer {
   height: auto;
   margin-bottom: 2vw;
   animation: fade-img linear;
-  /* animation-timeline: view(block 100% 0%); */
 }
 
-/* @keyframes fade-img {
-  0% {
-    opacity: 0;
-    margin-top: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 0;
-    margin-top: 5vh;
-  }
+.image-container-one {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/tww-cover.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
 
-  100% {
-    opacity: 1;
-  }
-} */
+.img-container-two {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/tww-cover.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
 
-.image-container {
+.image-container-three {
   width: 55%; /* Vollständige Breite des Elternelements */
   height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
   padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */

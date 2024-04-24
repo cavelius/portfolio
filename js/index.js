@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Verstecke das Overlay nach 7 Sekunden (4 Sekunden Anzeige + 3 Sekunden Animation)
   setTimeout(function () {
     overlay.style.position = "absolute";
-    overlay.style.zIndex = "1000";
+    overlay.style.zIndex = "100";
   }, 3000); // 7000 Millisekunden = 3 Sekunden Anzeige + 3 Sekunden Animation
 });
 
@@ -100,4 +100,68 @@ document.addEventListener("DOMContentLoaded", function () {
     offScreenMenu.classList.toggle("active");
     menuText.classList.toggle("active");
   });
+});
+
+// Übergang zu den Subpages
+
+document.addEventListener("DOMContentLoaded", function () {
+  const linkSubpage = document.querySelector(".container-img-and-text");
+  const mainElement = document.querySelector("main");
+  const footerElement = document.querySelector("footer");
+
+  linkSubpage.addEventListener("click", (event) => {
+    event.preventDefault(); // Verhindert das Standardverhalten des Links
+
+    // Füge die Klasse "transition-opacity" hinzu, um den Übergang der Opazität zu aktivieren
+    mainElement.classList.add("transition-opacity");
+    footerElement.classList.add("transition-opacity");
+
+    // Setze die Opazität der Elemente auf 0, was den Fadeneffekt auslöst
+    setTimeout(() => {
+      mainElement.style.opacity = 0;
+      footerElement.style.opacity = 0;
+    }, 0);
+
+    // Navigiere zur Seite "things-we-write.html" nach einer Sekunde
+    setTimeout(() => {
+      window.location.href = "things-we-write.html";
+    }, 500);
+  });
+});
+
+// Laden der Unterseiten
+
+document.addEventListener("DOMContentLoaded", function () {
+  const subOverlayFont = document.getElementById("subpage-overlay-font");
+  const subImages = document.querySelector(".subpage-images");
+  const subTilte = document.querySelector(".subpage-title-ul");
+  const subText = document.querySelector(".subpage-title-long-text");
+
+  subOverlayFont.classList.add("fontchangeposition");
+  subImages.classList.add("imagesAnimation");
+  // animation der Schrift
+  subTilte.classList.add("fontAnimation");
+  subText.classList.add("fontAnimation");
+});
+
+// animation der Elemente
+
+const subImage = document.querySelector(".img-container-two");
+
+// Eventlistener für das Scroll-Event hinzufügen
+window.addEventListener("scroll", function () {
+  // Höhe des Viewports
+  const viewportHeight = window.innerHeight;
+
+  // Position des Elements relativ zum Viewport
+  const elementPosition = subImage.getBoundingClientRect().top;
+
+  // Wenn das Element 30% oder mehr der Browserhöhe erreicht hat
+  if (elementPosition < viewportHeight * 0.3) {
+    // CSS-Klasse hinzufügen, um die Animation zu starten
+    subImage.classList.add("imgAnimation");
+  } else {
+    // CSS-Klasse entfernen, falls das Element weniger als 30% der Browserhöhe hat
+    subImage.classList.remove("imgAnimation");
+  }
 });
