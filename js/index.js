@@ -144,24 +144,28 @@ document.addEventListener("DOMContentLoaded", function () {
   subText.classList.add("fontAnimation");
 });
 
-// animation der Elemente
+// ANIMATION ON SCROLL
 
-const subImage = document.querySelector(".img-container-two");
-
-// Eventlistener für das Scroll-Event hinzufügen
-window.addEventListener("scroll", function () {
-  // Höhe des Viewports
-  const viewportHeight = window.innerHeight;
-
-  // Position des Elements relativ zum Viewport
-  const elementPosition = subImage.getBoundingClientRect().top;
-
-  // Wenn das Element 30% oder mehr der Browserhöhe erreicht hat
-  if (elementPosition < viewportHeight * 0.3) {
-    // CSS-Klasse hinzufügen, um die Animation zu starten
-    subImage.classList.add("imgAnimation");
-  } else {
-    // CSS-Klasse entfernen, falls das Element weniger als 30% der Browserhöhe hat
-    subImage.classList.remove("imgAnimation");
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+        entry.target.classList.remove("not-in-view");
+      } else {
+        entry.target.classList.remove("in-view");
+        entry.target.classList.add("not-in-view");
+      }
+    });
+  },
+  {
+    rootMargin: "0px",
+    threshold: [0, 0, 1, 1],
   }
+);
+
+const tags = document.querySelectorAll("figure");
+
+tags.forEach((tag) => {
+  observer.observe(tag);
 });

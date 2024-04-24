@@ -105,7 +105,7 @@ html {
 #animiertesDiv {
   height: 30px;
   /* background-color: blue; */
-  animation: divAnimation 0.5s forwards; /* CSS-Animation mit Dauer und Effekten */
+  animation: divAnimation 1.5s forwards; /* CSS-Animation mit Dauer und Effekten */
 }
 
 @keyframes divAnimation {
@@ -593,7 +593,7 @@ footer {
     letter-spacing: 0.045em;
     text-transform: uppercase;
     margin: 6vw 7vw 0 7vw;
-    animation: schriftGroesse 1s 2s forwards;
+    animation: schriftGroesse 1s 0.7s forwards;
   }
 
   @keyframes schriftGroesse {
@@ -786,12 +786,12 @@ footer {
 
   .title-text span {
     line-height: 50vw;
-    animation: line-heightAnimation 3s forwards; /* CSS-Animation mit Dauer und Effekten */
+    animation: line-heightAnimation 1.5s forwards; /* CSS-Animation mit Dauer und Effekten */
   }
 
   @keyframes line-heightAnimation {
     from {
-      line-height: 50vw;
+      line-height: 20vw;
     }
     to {
       line-height: 8vw;
@@ -1074,6 +1074,7 @@ footer {
   position: relative;
   z-index: 10000;
   animation: imagesAnimation 1s 0.1s forwards;
+  margin-top: 2vw;
 }
 
 @keyframes imagesAnimation {
@@ -1106,7 +1107,7 @@ footer {
   margin-bottom: 2vw;
 }
 
-.img-container-two {
+.image-container-two {
   width: 55%; /* Vollständige Breite des Elternelements */
   height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
   padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
@@ -1124,6 +1125,48 @@ footer {
   background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
   background-position: center; /* Das Bild zentrieren */
   margin-bottom: 2vw;
+}
+.image-container-four {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/tww-cover.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-container-five {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/tww-cover.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+
+figure {
+  margin: 0px;
+}
+
+@keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 2vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0vw);
+  }
+}
+
+figure.in-view {
+  animation: fadeAnimation 1s 0.2s both;
+}
+
+figure.not-in-view {
+  opacity: 0;
+  /* transform: translate(0, -4vw); */
 }
 
 /*----------SUBPAGE  mobile S Viewport---------- */
@@ -1155,15 +1198,33 @@ footer {
     margin: 6vw 7vw 0 7vw;
     gap: 10px;
     width: 90%;
+    animation: none;
   }
 
   .subpage-title-long-text {
     margin-top: 10vw;
     font-size: 3vw;
     line-height: 4vw;
+    text-align: left;
   }
 
-  .image-container {
+  .image-container-one {
+    width: 100%;
+    padding-top: 100%;
+  }
+  .image-container-two {
+    width: 100%;
+    padding-top: 100%;
+  }
+  .image-container-three {
+    width: 100%;
+    padding-top: 100%;
+  }
+  .image-container-four {
+    width: 100%;
+    padding-top: 100%;
+  }
+  .image-container-five {
     width: 100%;
     padding-top: 100%;
   }
