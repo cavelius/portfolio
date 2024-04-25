@@ -45,6 +45,27 @@ p.not-in-view {
   opacity: 0;
 }
 
+hr {
+  margin: 0px;
+}
+
+@keyframes lineAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+hr.in-view {
+  animation: lineAnimation 1s 1s both;
+}
+
+hr.not-in-view {
+  width: 100%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -202,6 +223,7 @@ nav {
   left: 2vw;
   text-decoration: none;
   height: 10.6em;
+  z-index: 1000;
 }
 
 .chapter {
@@ -329,8 +351,8 @@ span {
   width: 100%;
   margin-top: 20vw;
   margin-bottom: 7vw;
-  animation: line linear;
-  animation-timeline: view(block 0% 0%);
+  /* animation: line linear;
+  animation-timeline: view(block 0% 0%); */
 }
 
 @keyframes line {
@@ -400,7 +422,13 @@ span {
   animation-timeline: view(block 60% 0%); */
 }
 
-.container-img-and-text {
+.container-img-and-text-one {
+  margin: 1.5vw;
+}
+.container-img-and-text-two {
+  margin: 1.5vw;
+}
+.container-img-and-text-three {
   margin: 1.5vw;
 }
 
@@ -849,7 +877,13 @@ footer {
     width: 100%;
   }
 
-  .container-img-and-text {
+  .container-img-and-text-one {
+    margin: 0vw;
+  }
+  .container-img-and-text-two {
+    margin: 0vw;
+  }
+  .container-img-and-text-three {
     margin: 0vw;
   }
 
@@ -946,6 +980,10 @@ footer {
     text-transform: lowercase;
     letter-spacing: 0;
     margin-top: 8vh;
+  }
+
+  .socials-block {
+    margin-top: 10vw;
   }
 
   .socials a {
