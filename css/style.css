@@ -23,7 +23,7 @@
 
 p {
   margin: 0px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 @keyframes fadeAnimation {
@@ -37,11 +37,11 @@ p {
   }
 }
 
-div.in-view {
+p.in-view {
   animation: fadeAnimation 1s 0.2s both;
 }
 
-div.not-in-view {
+p.not-in-view {
   opacity: 0;
 }
 
@@ -433,8 +433,8 @@ span {
   margin-top: 2vh;
   position: relative;
   top: 1px;
-  animation: fade-text linear;
-  animation-timeline: view(block 60% 0%);
+  /* animation: fade-text linear;
+  animation-timeline: view(block 60% 0%); */
 }
 
 .proect-description {
@@ -443,8 +443,8 @@ span {
   margin: 0;
   position: relative;
   top: 1px;
-  animation: fade-text linear;
-  animation-timeline: view(block 60% 0%);
+  /* animation: fade-text linear;
+  animation-timeline: view(block 60% 0%); */
 }
 
 @keyframes fade-text {
@@ -495,10 +495,9 @@ span {
   letter-spacing: 0.01vw;
   z-index: 3;
   position: relative;
-
   top: 1px;
-  animation: fade-text linear;
-  animation-timeline: view(block 60% 0%);
+  /* animation: fade-text linear;
+  animation-timeline: view(block 60% 0%); */
 }
 
 .about-text-smal {
@@ -512,8 +511,8 @@ span {
   margin-right: 7vw;
   position: relative;
   top: 10px;
-  animation: fade linear;
-  animation-timeline: view(block 60% 0%);
+  /* animation: fade linear;
+  animation-timeline: view(block 60% 0%); */
 }
 
 @keyframes fade {
@@ -895,6 +894,7 @@ footer {
 
   .headline-chapter {
     font-size: 3vw;
+    margin-bottom: 4vw;
   }
 
   .headline-chapter-white {
@@ -1169,7 +1169,7 @@ footer {
 
 figure {
   margin: 0px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 @keyframes fadeAnimation {
