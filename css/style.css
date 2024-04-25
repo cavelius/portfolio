@@ -1147,6 +1147,7 @@ footer {
 
 figure {
   margin: 0px;
+  border: 1px solid red;
 }
 
 @keyframes fadeAnimation {
@@ -1211,25 +1212,50 @@ figure.not-in-view {
   .image-container-one {
     width: 100%;
     padding-top: 100%;
+    margin-bottom: 7vw;
   }
   .image-container-two {
     width: 100%;
     padding-top: 100%;
+    margin-bottom: 7vw;
   }
   .image-container-three {
     width: 100%;
     padding-top: 100%;
+    margin-bottom: 7vw;
   }
   .image-container-four {
     width: 100%;
     padding-top: 100%;
+    margin-bottom: 7vw;
   }
   .image-container-five {
     width: 100%;
     padding-top: 100%;
+    margin-bottom: 7vw;
   }
 
   .subpage-images {
     position: static;
+  }
+
+  @keyframes fadeAnimation {
+    0% {
+      opacity: 0;
+      transform: translate(0, 4vw);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0vw);
+    }
+  }
+
+  figure.in-view {
+    animation: fadeAnimation 1s 0.2s both;
+  }
+
+  figure.not-in-view {
+    opacity: 0;
+    /* transform: translate(0, -4vw); */
   }
 }
