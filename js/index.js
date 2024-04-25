@@ -164,7 +164,7 @@ const observer = new IntersectionObserver(
   }
 );
 
-const tags = document.querySelectorAll("figure");
+const tags = document.querySelectorAll("figure, p");
 
 tags.forEach((tag) => {
   observer.observe(tag);
