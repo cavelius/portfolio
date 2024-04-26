@@ -155,7 +155,7 @@ html {
 
   backdrop-filter: blur(2px);
   z-index: 98;
-  mask: linear-gradient(0deg, transparent, black 50%);
+  -webkit-mask: linear-gradient(0deg, transparent, black 50%);
 }
 
 #animiertesDiv {
