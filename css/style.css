@@ -692,6 +692,7 @@ footer {
 
   .off-screen-menu.active {
     right: 0;
+    z-index: 101;
   }
 
   .menu-text-work {
