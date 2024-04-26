@@ -147,6 +147,17 @@ html {
   }
 }
 
+.blur {
+  width: 100vw;
+  height: 8vw;
+  left: 0;
+  position: fixed;
+
+  backdrop-filter: blur(2px);
+  z-index: 98;
+  mask: linear-gradient(0deg, transparent, black 50%);
+}
+
 #animiertesDiv {
   height: 30px;
   /* background-color: blue; */
@@ -787,6 +798,11 @@ footer {
     display: none;
   }
 
+  /* top blur */
+  .blur {
+    height: 20vw;
+    backdrop-filter: blur(3px);
+  }
   /* title-text */
 
   .title-text .title-1 {
@@ -1039,6 +1055,8 @@ footer {
   margin-bottom: 0px;
   position: fixed;
   width: 85.9%;
+  z-index: 100;
+
   animation: subpage-overlay-font 1s 0.1s forwards;
 }
 
@@ -1237,6 +1255,11 @@ figure.not-in-view {
     position: relative;
   }
 
+  .blur {
+    height: 20vw;
+    backdrop-filter: blur(3px);
+  }
+
   .subpage-title-one {
     height: auto;
   }
@@ -1259,6 +1282,7 @@ figure.not-in-view {
     gap: 10px;
     width: 90%;
     animation: none;
+    z-index: 1000;
   }
 
   .subpage-title-long-text {
@@ -1296,6 +1320,7 @@ figure.not-in-view {
 
   .subpage-images {
     position: static;
+    z-index: 1;
   }
 
   @keyframes fadeAnimation {

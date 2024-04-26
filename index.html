@@ -23,6 +23,7 @@
   </head>
   <body>
     <header>
+      <div id="top"></div>
       <div class="off-screen-menu">
         <ul class="menu-text">
           <a class="menu-text-work" href="#work">work</a>
@@ -38,11 +39,14 @@
         </div>
       </nav>
       <div id="overlay">
-        <div id="overlay-font">
-          <div>sofia cavelius</div>
-          <div>portfolio</div>
-        </div>
+        <a href="#top">
+          <div id="overlay-font">
+            <div>sofia cavelius</div>
+            <div>portfolio</div>
+          </div>
+        </a>
       </div>
+      <div class="blur"></div>
     </header>
     <main>
       <div id="animiertesDiv"></div>
@@ -56,7 +60,7 @@
           <span class="title-1"> welcome to my portfolio, </span>
           <span class="title-2">here you can find</span>
           <span class="title-3">some</span>
-          <span class="title-4">design</span>
+          <span id="work" class="title-4">design</span>
           <span class="title-5">projects</span>
           <span class="title-6">from me</span>
         </div>
@@ -79,7 +83,7 @@
       </section>
       <!-- _______ -->
       <section class="work-section">
-        <div id="work" class="headline-chapter">
+        <div class="headline-chapter">
           <p>[ work ]</p>
         </div>
         <div class="project">
@@ -130,10 +134,10 @@
           </div>
         </div>
       </section>
-      <section class="about-section">
+      <section id="about" class="about-section">
         <hr id="line" class="first-line" />
         <div class="about-chapter">
-          <div id="about" class="headline-chapter">
+          <div class="headline-chapter">
             <p>[ about ]</p>
           </div>
           <div class="container-about-text">
