@@ -142,3 +142,35 @@ const tags = document.querySelectorAll("figure, p, hr");
 tags.forEach((tag) => {
   observer.observe(tag);
 });
+
+// supage change the image
+
+// Array mit den URLs der Bilder
+const imageUrls = [
+  "./img/magazin-mockup-titel_02.png",
+  "./img/magazin-mockup-titel_03.png",
+  "./img/magazin-mockup-titel_04.png",
+  "./img/magazin-mockup-titel_01.png",
+  // Weitere Bild-URLs hinzufügen, falls erforderlich
+];
+
+// Index des aktuellen Bilds
+let currentIndex = 0;
+
+// Funktion zum Austauschen des Hintergrundbilds
+function changeBackgroundImage() {
+  // Aktuelle Bild-URL aus dem Array abrufen
+  const currentImageUrl = imageUrls[currentIndex];
+
+  // Das Element auswählen, dem das Hintergrundbild zugewiesen ist
+  const imageContainer = document.querySelector(".image-container-one");
+
+  // Hintergrundbild-URL ändern
+  imageContainer.style.backgroundImage = `url('${currentImageUrl}')`;
+
+  // Zum nächsten Bild im Array wechseln oder zum ersten zurückkehren, wenn das Ende erreicht ist
+  currentIndex = (currentIndex + 1) % imageUrls.length;
+}
+
+// Hintergrundbild alle 2 Sekunden ändern
+setInterval(changeBackgroundImage, 2500);

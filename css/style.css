@@ -1181,17 +1181,18 @@ footer {
   width: 55%; /* Vollständige Breite des Elternelements */
   height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
   padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
-  background-image: url("../img/tww-cover.png"); /* Pfad zum Bild festlegen */
+  background-image: url("../img/magazin-mockup-titel_01.png");
   background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
   background-position: center; /* Das Bild zentrieren */
   margin-bottom: 2vw;
+  transition: background-image 0.5s ease-in-out; /* Übergangseigenschaft hinzufügen */
 }
 
 .image-container-two {
   width: 55%; /* Vollständige Breite des Elternelements */
   height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
   padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
-  background-image: url("../img/tww-cover.png"); /* Pfad zum Bild festlegen */
+  background-image: url("../img/magazin_01.png"); /* Pfad zum Bild festlegen */
   background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
   background-position: center; /* Das Bild zentrieren */
   margin-bottom: 2vw;
@@ -1201,7 +1202,7 @@ footer {
   width: 55%; /* Vollständige Breite des Elternelements */
   height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
   padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
-  background-image: url("../img/tww-cover.png"); /* Pfad zum Bild festlegen */
+  background-image: url("../img/magazin_02.png"); /* Pfad zum Bild festlegen */
   background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
   background-position: center; /* Das Bild zentrieren */
   margin-bottom: 2vw;
@@ -1210,7 +1211,7 @@ footer {
   width: 55%; /* Vollständige Breite des Elternelements */
   height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
   padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
-  background-image: url("../img/tww-cover.png"); /* Pfad zum Bild festlegen */
+  background-image: url("../img/Magazin_11.png"); /* Pfad zum Bild festlegen */
   background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
   background-position: center; /* Das Bild zentrieren */
   margin-bottom: 2vw;
@@ -1219,11 +1220,74 @@ footer {
   width: 55%; /* Vollständige Breite des Elternelements */
   height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
   padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
-  background-image: url("../img/tww-cover.png"); /* Pfad zum Bild festlegen */
+  background-image: url("../img/Magazin_04.png"); /* Pfad zum Bild festlegen */
   background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
   background-position: center; /* Das Bild zentrieren */
   margin-bottom: 2vw;
 }
+.image-container-six {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/Magazin_05.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-container-seven {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/Magazin_06.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-container-eight {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/Magazin_12.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-container-nine {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/Magazin_08.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-container-ten {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/Magazin_09.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-container-eleven {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/Magazin_03.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+/* .image-container-twelve {
+  width: 55%;
+  height: 0;
+  padding-top: 52%; 
+  background-image: url("../img/Magazin_11.png"); 
+  background-size: cover; 
+  background-position: center; 
+  margin-bottom: 2vw;
+} */
 
 figure {
   margin: 0px;
