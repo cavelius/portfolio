@@ -1362,6 +1362,7 @@ figure.not-in-view {
     width: 100%;
     padding-top: 100%;
     margin-bottom: 7vw;
+    transition: background-image 0.5s ease-in-out; /* Übergangseigenschaft hinzufügen */
   }
   .image-container-two {
     width: 100%;
