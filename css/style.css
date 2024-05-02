@@ -1363,6 +1363,7 @@ figure.not-in-view {
     padding-top: 100%;
     margin-bottom: 7vw;
     transition: background-image 0.5s ease-in-out; /* Übergangseigenschaft hinzufügen */
+    transform: translate3d(0, 0, 0); /* Hardware-Beschleunigung aktivieren */
   }
   .image-container-two {
     width: 100%;
