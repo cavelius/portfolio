@@ -1185,7 +1185,6 @@ footer {
   background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
   background-position: center; /* Das Bild zentrieren */
   margin-bottom: 2vw;
-  transition: background-image 0.5s ease-in-out; /* Übergangseigenschaft hinzufügen */
 }
 
 .image-container-two {
@@ -1363,15 +1362,6 @@ figure.not-in-view {
     padding-top: 100%;
     margin-bottom: 7vw;
     background-image: url("../img/magazin-mockup-titel_01.png");
-    transition: background-image 0.5s ease-in-out; /* Übergangseigenschaft hinzufügen */
-    -webkit-transition: background-image 0.5s ease-in-out; /* Übergangseigenschaft hinzufügen */
-  }
-
-  @supports (transition: initial) {
-    /* Stelle sicher, dass der Browser die Transition unterstützt */
-    .image-container-one {
-      transition: background-image 0.5s ease-in-out; /* Übergangseigenschaft hinzufügen */
-    }
   }
 
   .image-container-two {

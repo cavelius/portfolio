@@ -154,23 +154,31 @@ const imageUrls = [
   // Weitere Bild-URLs hinzufügen, falls erforderlich
 ];
 
-// Index des aktuellen Bilds
 let currentIndex = 0;
 
-// Funktion zum Austauschen des Hintergrundbilds
 function changeBackgroundImage() {
-  // Aktuelle Bild-URL aus dem Array abrufen
   const currentImageUrl = imageUrls[currentIndex];
-
-  // Das Element auswählen, dem das Hintergrundbild zugewiesen ist
   const imageContainer = document.querySelector(".image-container-one");
+  const nextImage = new Image();
 
-  // Hintergrundbild-URL ändern
-  imageContainer.style.backgroundImage = `url('${currentImageUrl}')`;
+  nextImage.onload = function () {
+    // Das neue Bild einfügen
+    imageContainer.style.backgroundImage = `url('${currentImageUrl}')`;
 
-  // Zum nächsten Bild im Array wechseln oder zum ersten zurückkehren, wenn das Ende erreicht ist
+    // Die Transparenz des aktuellen Bildes reduzieren, um es auszublenden
+    imageContainer.style.transition = "opacity 1s ease-in-out";
+    imageContainer.style.opacity = "0";
+
+    // Sobald das aktuelle Bild ausgeblendet ist, die Transparenz zurücksetzen und das nächste Bild einblenden
+    setTimeout(() => {
+      imageContainer.style.opacity = "1";
+    }, 1000);
+  };
+
+  // Lade das nächste Bild, um sicherzustellen, dass es im Cache ist, bevor es angezeigt wird
+  nextImage.src = imageUrls[(currentIndex + 1) % imageUrls.length];
+
   currentIndex = (currentIndex + 1) % imageUrls.length;
 }
 
-// Hintergrundbild alle 2 Sekunden ändern
 setInterval(changeBackgroundImage, 2500);
