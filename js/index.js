@@ -145,12 +145,11 @@ tags.forEach((tag) => {
 
 // supage change the image
 
-// Array mit den URLs der Bilder
 const imageUrls = [
+  "./img/magazin-mockup-titel_01.png",
   "./img/magazin-mockup-titel_02.png",
   "./img/magazin-mockup-titel_03.png",
   "./img/magazin-mockup-titel_04.png",
-  "./img/magazin-mockup-titel_01.png",
   // Weitere Bild-URLs hinzufügen, falls erforderlich
 ];
 
@@ -181,4 +180,8 @@ function changeBackgroundImage() {
   currentIndex = (currentIndex + 1) % imageUrls.length;
 }
 
+// Initialen Bildwechsel aufrufen, um das erste Bild sofort anzuzeigen
+changeBackgroundImage();
+
+// Den periodischen Bildwechsel fortsetzen
 setInterval(changeBackgroundImage, 2500);
