@@ -1367,6 +1367,13 @@ figure.not-in-view {
     -webkit-transition: background-image 0.5s ease-in-out; /* Übergangseigenschaft hinzufügen */
   }
 
+  @supports (transition: initial) {
+    /* Stelle sicher, dass der Browser die Transition unterstützt */
+    .image-container-one {
+      transition: background-image 0.5s ease-in-out; /* Übergangseigenschaft hinzufügen */
+    }
+  }
+
   .image-container-two {
     width: 100%;
     padding-top: 100%;
