@@ -1362,9 +1362,11 @@ figure.not-in-view {
     width: 100%;
     padding-top: 100%;
     margin-bottom: 7vw;
+    background-image: url("../img/magazin-mockup-titel_01.png");
     transition: background-image 0.5s ease-in-out; /* Übergangseigenschaft hinzufügen */
-    transform: translate3d(0, 0, 0); /* Hardware-Beschleunigung aktivieren */
+    -webkit-transition: background-image 0.5s ease-in-out; /* Übergangseigenschaft hinzufügen */
   }
+
   .image-container-two {
     width: 100%;
     padding-top: 100%;
