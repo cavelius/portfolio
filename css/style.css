@@ -1590,3 +1590,163 @@ figure.not-in-view {
     margin-bottom: 7vw;
   }
 }
+
+/* KALENDER-COLLECTION */
+
+.image-calendar-container-one {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/carmushka_kalender_cover_03.png");
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+
+.image-calendar-container-two {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/carmushka_kalender_innenseiten-animiert.gif"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+
+.image-calendar-container-three {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/carmushka_kalender_innen_04.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-calendar-container-four {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/carmushka_kalender_innen_02.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-calendar-container-five {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/carmushka_kalender_innen_05.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-calendar-container-six {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/carmushka_kalender_innen_03.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-calendar-container-seven {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/carmushka_kalender_innen_05.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-calendar-container-eight {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/carmushka_kalender_innen_09.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-calendar-container-nine {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/Magazin_08.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-calendar-container-ten {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/Magazin_09.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-calendar-container-eleven {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/Magazin_03.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+
+/* Mobile S kalender kollektion */
+
+@media (max-width: 640px) {
+  .image-calendar-container-one {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+
+  .image-calendar-container-two {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+  .image-calendar-container-three {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+  .image-calendar-container-four {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+  .image-calendar-container-five {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+  .image-calendar-container-six {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+  .image-calendar-container-seven {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+  .image-calendar-container-eight {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+  .image-calendar-container-nine {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+  .image-calendar-container-ten {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+}
