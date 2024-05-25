@@ -217,14 +217,14 @@ function changeBackgroundImageAdvent() {
     imageContainerAdvent.style.backgroundImage = `url('${currentImageUrlAdvent}')`;
 
     // Die Transparenz des aktuellen Bildes reduzieren, um es auszublenden
-    imageContainerAdvent.style.transition = "opacity 1s ease-in-out";
-    imageContainerAdvent.style.opacity = "0";
+    // imageContainerAdvent.style.transition = "opacity 1s ease-in-out";
+    // imageContainerAdvent.style.opacity = "0";
 
     // Sobald das aktuelle Bild ausgeblendet ist, die Transparenz zurücksetzen und das nächste Bild einblenden
-    setTimeout(() => {
-      imageContainerAdvent.style.opacity = "1";
-    }, 500);
-  };
+  //   setTimeout(() => {
+  //     imageContainerAdvent.style.opacity = "1";
+  //   }, 500);
+  // };
 
   // Lade das nächste Bild, um sicherzustellen, dass es im Cache ist, bevor es angezeigt wird
   nextImageAdvent.src =
