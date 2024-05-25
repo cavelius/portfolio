@@ -161,21 +161,18 @@ function changeBackgroundImage() {
   const nextImage = new Image();
 
   nextImage.onload = function () {
-    // Das neue Bild einfügen
-    imageContainer.style.backgroundImage = `url('${currentImageUrl}')`;
-
-    // Die Transparenz des aktuellen Bildes reduzieren, um es auszublenden
-    imageContainer.style.transition = "opacity 1s ease-in-out";
+    // Sobald das neue Bild geladen ist, die Transparenz des aktuellen Bildes reduzieren
     imageContainer.style.opacity = "0";
 
-    // Sobald das aktuelle Bild ausgeblendet ist, die Transparenz zurücksetzen und das nächste Bild einblenden
+    // Nach der Übergangszeit das neue Bild setzen und die Transparenz wiederherstellen
     setTimeout(() => {
+      imageContainer.style.backgroundImage = `url('${currentImageUrl}')`;
       imageContainer.style.opacity = "1";
-    }, 1000);
+    }, 1000); // Diese Zeit muss mit der Dauer des Übergangs übereinstimmen
   };
 
   // Lade das nächste Bild, um sicherzustellen, dass es im Cache ist, bevor es angezeigt wird
-  nextImage.src = imageUrls[(currentIndex + 1) % imageUrls.length];
+  nextImage.src = currentImageUrl;
 
   currentIndex = (currentIndex + 1) % imageUrls.length;
 }
@@ -184,8 +181,7 @@ function changeBackgroundImage() {
 changeBackgroundImage();
 
 // Den periodischen Bildwechsel fortsetzen
-setInterval(changeBackgroundImage, 2500);
-
+setInterval(changeBackgroundImage, 4000);
 // subpage change the image Adventskalender
 
 const imageUrlsAdvent = [

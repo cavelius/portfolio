@@ -1185,6 +1185,12 @@ footer {
   background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
   background-position: center; /* Das Bild zentrieren */
   margin-bottom: 2vw;
+  transition: opacity 1s ease-in-out; /* Standard CSS */
+  -webkit-transition: opacity 1s ease-in-out; /* Safari */
+  -moz-transition: opacity 1s ease-in-out; /* Firefox */
+  -ms-transition: opacity 1s ease-in-out; /* Internet Explorer */
+  -o-transition: opacity 1s ease-in-out; /* Opera */
+  opacity: 1;
 }
 
 .image-container-two {
