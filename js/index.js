@@ -150,7 +150,6 @@ const imageUrls = [
   "./img/magazin-mockup-titel_02.png",
   "./img/magazin-mockup-titel_03.png",
   "./img/magazin-mockup-titel_04.png",
-  // Weitere Bild-URLs hinzufügen, falls erforderlich
 ];
 
 let currentIndex = 0;

@@ -335,7 +335,7 @@ span {
 
 .title-img {
   align-items: center;
-  display: flex;
+  display: grid;
   position: fixed;
   z-index: 3;
 }
@@ -381,7 +381,7 @@ span {
   width: 7.5vw;
   height: auto;
   z-index: 3;
-  transform: translate(20%, 75%);
+  transform: translate(-80%, 350%);
 }
 
 #some-of-my-designs {
@@ -389,7 +389,7 @@ span {
   width: 10vw;
   height: auto;
   z-index: 3;
-  transform: translate(20%, 50%);
+  transform: translate(-80%, 420%);
 }
 
 #click-on-it {
@@ -397,21 +397,21 @@ span {
   width: 10vw;
   height: auto;
   z-index: 3;
-  transform: translate(20%, 50%);
+  transform: translate(-80%, 500%);
 }
 #about-me {
   display: none;
   width: 8vw;
   height: auto;
   z-index: 3;
-  transform: translate(30%, 200%);
+  transform: translate(-70%, 600%);
 }
 #lets-connect {
   display: none;
   width: 10vw;
   height: auto;
   z-index: 3;
-  transform: translate(-10%, 440%);
+  transform: translate(-110%, 1200%);
 }
 
 .work-section {
@@ -1603,7 +1603,7 @@ figure.not-in-view {
   width: 55%; /* Vollständige Breite des Elternelements */
   height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
   padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
-  background-image: url("../img/carmushka_kalender_cover_03.png");
+  background-image: url("../img/carmushka_kalender_collection.png");
   background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
   background-position: center; /* Das Bild zentrieren */
   margin-bottom: 2vw;
@@ -1613,7 +1613,7 @@ figure.not-in-view {
   width: 55%; /* Vollständige Breite des Elternelements */
   height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
   padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
-  background-image: url("../img/carmushka_kalender_innen_04.png"); /* Pfad zum Bild festlegen */
+  background-image: url("../img/carmushka_kalender_cover_03.png"); /* Pfad zum Bild festlegen */
   background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
   background-position: center; /* Das Bild zentrieren */
   margin-bottom: 2vw;
@@ -1623,7 +1623,7 @@ figure.not-in-view {
   width: 55%; /* Vollständige Breite des Elternelements */
   height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
   padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
-  background-image: url("../img/carmushka_kalender_innen_04.png"); /* Pfad zum Bild festlegen */
+  background-image: url("../img/carmushka_kalender_innen_01.png"); /* Pfad zum Bild festlegen */
   background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
   background-position: center; /* Das Bild zentrieren */
   margin-bottom: 2vw;
@@ -1659,7 +1659,7 @@ figure.not-in-view {
   width: 55%; /* Vollständige Breite des Elternelements */
   height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
   padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
-  background-image: url("../img/carmushka_kalender_innen_05.png"); /* Pfad zum Bild festlegen */
+  background-image: url("../img/carmushka_kalender_innen_10.png"); /* Pfad zum Bild festlegen */
   background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
   background-position: center; /* Das Bild zentrieren */
   margin-bottom: 2vw;
@@ -1668,7 +1668,7 @@ figure.not-in-view {
   width: 55%; /* Vollständige Breite des Elternelements */
   height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
   padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
-  background-image: url("../img/carmushka_kalender_innen_09.png"); /* Pfad zum Bild festlegen */
+  background-image: url("../img/carmushka_kalender_tischkalender_cover.png"); /* Pfad zum Bild festlegen */
   background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
   background-position: center; /* Das Bild zentrieren */
   margin-bottom: 2vw;
@@ -1677,7 +1677,7 @@ figure.not-in-view {
   width: 55%; /* Vollständige Breite des Elternelements */
   height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
   padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
-  background-image: url("../img/Magazin_08.png"); /* Pfad zum Bild festlegen */
+  background-image: url("../img/carmushka_kalender_monatskalender_01.png"); /* Pfad zum Bild festlegen */
   background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
   background-position: center; /* Das Bild zentrieren */
   margin-bottom: 2vw;
@@ -1686,16 +1686,7 @@ figure.not-in-view {
   width: 55%; /* Vollständige Breite des Elternelements */
   height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
   padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
-  background-image: url("../img/Magazin_09.png"); /* Pfad zum Bild festlegen */
-  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
-  background-position: center; /* Das Bild zentrieren */
-  margin-bottom: 2vw;
-}
-.image-calendar-container-eleven {
-  width: 55%; /* Vollständige Breite des Elternelements */
-  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
-  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
-  background-image: url("../img/Magazin_03.png"); /* Pfad zum Bild festlegen */
+  background-image: url("../img/carmushka_kalender_monatskalender_innen.png"); /* Pfad zum Bild festlegen */
   background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
   background-position: center; /* Das Bild zentrieren */
   margin-bottom: 2vw;
