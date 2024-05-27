@@ -919,29 +919,34 @@ footer {
   #i-am-sofia {
     width: 20vw;
     height: auto;
-    transform: translate(40%, -350%);
+    transform: translate(-40%, -400%);
+    position: absolute;
   }
 
   #some-of-my-designs {
     width: 27vw;
     height: auto;
-    transform: translate(70%, -590%);
+    transform: translate(-30%, -590%);
+    position: absolute;
   }
 
   #click-on-it {
     width: 25vw;
     height: auto;
-    transform: translate(60%, -620%);
+    transform: translate(-30%, -620%);
+    position: absolute;
   }
   #about-me {
     width: 20vw;
     height: auto;
-    transform: translate(80%, -690%);
+    transform: translate(-10%, -695%);
+    position: absolute;
   }
   #lets-connect {
     width: 25vw;
     height: auto;
-    transform: translate(60%, -1270%);
+    transform: translate(-110%, -900%);
+    position: absolute;
   }
 
   .headline-chapter {

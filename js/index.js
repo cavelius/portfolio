@@ -35,27 +35,27 @@ document.addEventListener("scroll", () => {
   var letsConnect = document.getElementById("lets-connect");
 
   if (percentage >= 0 && percentage < 10.870610870610872) {
-    iAmSofia.style.display = "flex"; // Bild anzeigen
+    iAmSofia.style.display = "grid"; // Bild anzeigen
   } else {
     iAmSofia.style.display = "none"; // Bild ausblenden
   }
   if (percentage >= 12.68976255352277 && percentage < 42.78676988036594) {
-    someOfMyDesignns.style.display = "flex"; // Bild anzeigen
+    someOfMyDesignns.style.display = "grid"; // Bild anzeigen
   } else {
     someOfMyDesignns.style.display = "none"; // Bild ausblenden
   }
   if (percentage >= 48.55328158080452 && percentage < 62.797747942832395) {
-    clickOnIt.style.display = "flex"; // Bild anzeigen
+    clickOnIt.style.display = "grid"; // Bild anzeigen
   } else {
     clickOnIt.style.display = "none"; // Bild ausblenden
   }
   if (percentage >= 76.91641403204851 && percentage < 90) {
-    aboutMe.style.display = "flex"; // Bild anzeigen
+    aboutMe.style.display = "grid"; // Bild anzeigen
   } else {
     aboutMe.style.display = "none"; // Bild ausblenden
   }
   if (percentage >= 98) {
-    letsConnect.style.display = "flex"; // Bild anzeigen
+    letsConnect.style.display = "grid"; // Bild anzeigen
   } else {
     letsConnect.style.display = "none"; // Bild ausblenden
   }
