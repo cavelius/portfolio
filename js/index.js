@@ -185,6 +185,7 @@ setInterval(changeBackgroundImage, 4000);
 // NEUNEUNEU
 document.addEventListener("DOMContentLoaded", (event) => {
   const container = document.querySelector(".image-advent-container-one");
+  const preloadContainer = document.querySelector(".preload-container");
   const images = [
     "./img/adventskalender_01.png",
     "./img/adventskalender_02.png",
@@ -201,23 +202,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
   ];
   let currentIndexA = 0;
 
-  // Promise-basierte Bildvorladung
-  function preloadImage(src) {
-    return new Promise((resolve, reject) => {
-      const img = new Image();
-      img.onload = () => resolve(img);
-      img.onerror = () => reject(new Error(`Failed to load image: ${src}`));
-      img.src = src;
-    });
-  }
+  // Bilder vorladen
+  images.forEach((image) => {
+    const img = new Image();
+    img.src = image;
+    preloadContainer.appendChild(img);
+  });
 
   function showNextImage() {
-    preloadImage(images[currentIndexA])
-      .then(() => {
-        container.style.background = `url(${images[currentIndexA]}) no-repeat center center / cover`;
-        currentIndexA = (currentIndexA + 1) % images.length;
-      })
-      .catch((error) => console.error(error));
+    container.style.backgroundImage = `url(${images[currentIndexA]})`;
+    currentIndexA = (currentIndexA + 1) % images.length;
   }
 
   // Initiales Bild anzeigen
