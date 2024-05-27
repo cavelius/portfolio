@@ -1471,7 +1471,7 @@ figure.not-in-view {
   width: 55%;
   height: 0;
   padding-top: 52%;
-  background-image: url("../img/adventskalender_mockup_offen.png");
+  background-image: url("../img/adventskalender_animiert.gif");
   background-size: cover;
   background-position: center;
   margin-bottom: 2vw;
@@ -1632,7 +1632,7 @@ figure.not-in-view {
   width: 55%; /* Vollständige Breite des Elternelements */
   height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
   padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
-  background-image: url("../img/carmushka_kalender_innen_animiert_02.gif"); /* Pfad zum Bild festlegen */
+  background-image: url("../img/carmushka_kalender_innen_animiert_03.gif"); /* Pfad zum Bild festlegen */
   background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
   background-position: center; /* Das Bild zentrieren */
   margin-bottom: 2vw;
