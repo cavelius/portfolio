@@ -1463,6 +1463,10 @@ figure.not-in-view {
   margin-bottom: 2vw;
 }
 
+.preload-container {
+  display: none;
+}
+
 .image-advent-container-two {
   width: 55%;
   height: 0;

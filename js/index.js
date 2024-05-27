@@ -181,56 +181,42 @@ changeBackgroundImage();
 
 // Den periodischen Bildwechsel fortsetzen
 setInterval(changeBackgroundImage, 4000);
-// subpage change the image Adventskalender
 
-const imageUrlsAdvent = [
-  "./img/adventskalender_01.png",
-  "./img/adventskalender_02.png",
-  "./img/adventskalender_03.png",
-  "./img/adventskalender_04.png",
-  "./img/adventskalender_05.png",
-  "./img/adventskalender_06.png",
-  "./img/adventskalender_07.png",
-  "./img/adventskalender_08.png",
-  "./img/adventskalender_09.png",
-  "./img/adventskalender_10.png",
-  "./img/adventskalender_11.png",
-  "./img/adventskalender_12.png",
-];
+// NEUNEUNEU
+document.addEventListener("DOMContentLoaded", (event) => {
+  const container = document.querySelector(".image-advent-container-one");
+  const preloadContainer = document.querySelector(".preload-container");
+  const images = [
+    "./img/adventskalender_01.png",
+    "./img/adventskalender_02.png",
+    "./img/adventskalender_03.png",
+    "./img/adventskalender_04.png",
+    "./img/adventskalender_05.png",
+    "./img/adventskalender_06.png",
+    "./img/adventskalender_07.png",
+    "./img/adventskalender_08.png",
+    "./img/adventskalender_09.png",
+    "./img/adventskalender_10.png",
+    "./img/adventskalender_11.png",
+    "./img/adventskalender_12.png",
+  ];
+  let currentIndexA = 0;
 
-let currentIndexAdvent = 0;
+  // Bilder vorladen
+  images.forEach((image) => {
+    const img = new Image();
+    img.src = image;
+    preloadContainer.appendChild(img);
+  });
 
-function changeBackgroundImageAdvent() {
-  const currentImageUrlAdvent = imageUrlsAdvent[currentIndexAdvent];
-  const imageContainerAdvent = document.querySelector(
-    ".image-advent-container-one"
-  );
-  const nextImageAdvent = new Image();
+  function showNextImage() {
+    container.style.backgroundImage = `url(${images[currentIndexA]})`;
+    currentIndexA = (currentIndexA + 1) % images.length;
+  }
 
-  nextImageAdvent.onload = function () {
-    // Das neue Bild einfügen
-    imageContainerAdvent.style.backgroundImage = `url('${currentImageUrlAdvent}')`;
-  };
+  // Initiales Bild anzeigen
+  showNextImage();
 
-  // Die Transparenz des aktuellen Bildes reduzieren, um es auszublenden
-  // imageContainerAdvent.style.transition = "opacity 1s ease-in-out";
-  // imageContainerAdvent.style.opacity = "0";
-
-  // Sobald das aktuelle Bild ausgeblendet ist, die Transparenz zurücksetzen und das nächste Bild einblenden
-  //   setTimeout(() => {
-  //     imageContainerAdvent.style.opacity = "1";
-  //   }, 500);
-  // };
-
-  // Lade das nächste Bild, um sicherzustellen, dass es im Cache ist, bevor es angezeigt wird
-  nextImageAdvent.src =
-    imageUrlsAdvent[(currentIndexAdvent + 1) % imageUrlsAdvent.length];
-
-  currentIndexAdvent = (currentIndexAdvent + 1) % imageUrlsAdvent.length;
-}
-
-// Initialen Bildwechsel aufrufen, um das erste Bild sofort anzuzeigen
-changeBackgroundImageAdvent();
-
-// Den periodischen Bildwechsel fortsetzen
-setInterval(changeBackgroundImageAdvent, 1000);
+  // Bild jede Sekunde wechseln
+  setInterval(showNextImage, 1000);
+});
