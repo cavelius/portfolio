@@ -1122,8 +1122,8 @@ footer {
   font-size: var(--fontsize-2);
   line-height: 1.25vw;
   margin: 0;
-  text-align: justify;
-  text-align-last: left;
+  /* text-align: justify;
+  text-align-last: left; */
   opacity: 0;
   transform: translateY(1vw);
   animation: fontAnimation 1s 0.4s forwards;
