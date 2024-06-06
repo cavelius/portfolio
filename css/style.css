@@ -1749,3 +1749,233 @@ figure.not-in-view {
     margin-bottom: 7vw;
   }
 }
+
+/* RUND UMS ALL */
+
+.image-all-container-one {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/rund_ums-_all_cover.png");
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+  transition: opacity 1s ease-in-out; /* Standard CSS */
+  -webkit-transition: opacity 1s ease-in-out; /* Safari */
+  -moz-transition: opacity 1s ease-in-out; /* Firefox */
+  -ms-transition: opacity 1s ease-in-out; /* Internet Explorer */
+  -o-transition: opacity 1s ease-in-out; /* Opera */
+  opacity: 1;
+}
+
+.image-all-container-two {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/rund_ums_all_inhalt_01.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+
+.image-all-container-three {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/rund_ums_all_inhalt_09.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-all-container-four {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/rund_ums_all_inhalt_10.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-all-container-five {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/rund_ums_all_inhalt_11.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-all-container-six {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/rund_ums_all_inhalt_04.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-all-container-seven {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/rund_ums_all_inhalt_05.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-all-container-eight {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/rund_ums_all_inhalt_07.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-all-container-nine {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/rund_ums_all_inhalt_06.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+
+/* Mobile S rund ums all */
+
+@media (max-width: 640px) {
+  .image-all-container-one {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+
+  .image-all-container-two {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+  .image-all-container-three {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+  .image-all-container-four {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+  .image-all-container-five {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+  .image-all-container-six {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+  .image-all-container-seven {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+  .image-all-container-eight {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+  .image-all-container-nine {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+}
+
+/* INTERSTELLAR */
+
+.image-inter-container-one {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/interstellar_01.png");
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+  transition: opacity 1s ease-in-out; /* Standard CSS */
+  -webkit-transition: opacity 1s ease-in-out; /* Safari */
+  -moz-transition: opacity 1s ease-in-out; /* Firefox */
+  -ms-transition: opacity 1s ease-in-out; /* Internet Explorer */
+  -o-transition: opacity 1s ease-in-out; /* Opera */
+  opacity: 1;
+}
+
+.image-inter-container-two {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/interstellar_02.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+
+.image-inter-container-three {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/interstellar_03.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-inter-container-four {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/interstellar_05.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+.image-inter-container-five {
+  width: 55%; /* Vollständige Breite des Elternelements */
+  height: 0; /* Höhe auf 0 setzen, um das Seitenverhältnis des Hintergrundbildes zu kontrollieren */
+  padding-top: 52%; /* Das Seitenverhältnis des Hintergrundbildes festlegen (1:2, da die Höhe die Hälfte der Breite ist) */
+  background-image: url("../img/interstellar_04.png"); /* Pfad zum Bild festlegen */
+  background-size: cover; /* Das Bild so skalieren, dass es den Container vollständig ausfüllt */
+  background-position: center; /* Das Bild zentrieren */
+  margin-bottom: 2vw;
+}
+
+/* Mobile S rund ums all */
+
+@media (max-width: 640px) {
+  .image-inter-container-one {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+
+  .image-inter-container-two {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+  .image-inter-container-three {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+  .image-inter-container-four {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+  .image-inter-container-five {
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 7vw;
+  }
+}
